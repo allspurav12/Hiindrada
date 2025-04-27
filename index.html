@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Code & Place Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="https://ibb.co/KctrMtQG">
+                <img src="https://i.ibb.co/JWYsfYbd/IMG-8867.png" alt="IMG-8867" border="0">
+            </a>
+        </div>
+
+        <div class="search-section">
+            <select id="searchType" onchange="updatePlaceholder()">
+                <option value="pincode">Search by Pin Code</option>
+                <option value="place">Search by Place</option>
+            </select>
+
+            <input type="text" id="inputField" placeholder="Enter Pin Code or Place">
+            <button onclick="search()">Search</button>
+
+            <div id="result"></div>
+        </div>
+        <div class="footer">
+            <p>Design & Developed By Sourav Das</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
